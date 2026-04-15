@@ -1,0 +1,41 @@
+package com.mycompany.myfirstproject;
+import java.util.Scanner;
+public class Myfirstproject {
+    
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        double price1;
+        double price2;
+        int QuantitySold1;
+        int QuantitySold2;
+        double revenue1;
+        double revenue2;
+        double total;
+        char Currency = '$';
+        
+        
+        System.out.print("Enter the price of a laptop: ");
+        price1 = scanner.nextDouble();
+        
+        System.out.print("Enter # of laptops sold: ");
+        QuantitySold1 = scanner.nextInt();
+        scanner.nextLine();
+        
+        System.out.print("Enter the price of a mouse: ");
+        price2 = scanner.nextDouble();
+        
+        System.out.print("Enter # of mouses sold: ");
+        QuantitySold2 = scanner.nextInt();
+        
+        revenue1 = price1 * QuantitySold1;
+        revenue2 = price2 * QuantitySold2;
+        
+        total = revenue1 + revenue2;
+        
+        System.out.printf("The revenue of laptops for this month is: %c%.2f\n", Currency, revenue1);
+        System.out.printf("The revenue of mouses for this month is: %c%.2f\n",Currency, revenue2);
+        System.out.printf("The total of both products for this month is: %c%.2f\n",Currency, total);
+        
+        scanner.close();
+    }
+}
