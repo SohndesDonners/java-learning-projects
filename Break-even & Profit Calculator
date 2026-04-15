@@ -1,0 +1,42 @@
+package com.mycompany.myfirstproject;
+import java.util.Scanner;
+public class Myfirstproject {
+    
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        double fixedCost = 1000;
+        double variable_cost = 50.99;
+        double price;
+        int quantity;
+        int choice;
+        
+        System.out.print("Enter the price (price must be larger than the variable cost): ");
+        price = scanner.nextDouble();
+        
+        System.out.print("Enter the quantity: ");
+        quantity = scanner.nextInt();
+        
+        System.out.println("Which method do you want to choose?\n1. Calculate only profit\n 2. Calculate only break-even\n 3. Calculate both");
+        choice = scanner.nextInt();
+        
+        
+        double revenue = price * quantity;
+        double totalCost = fixedCost + (variable_cost * quantity);
+        double profit = revenue - totalCost;
+        double breakEven = fixedCost / (price - variable_cost);
+        
+        if(choice == 1){
+            System.out.printf("Profit is: $%.2f\n", profit);
+        }
+        else if(choice == 2){
+        System.out.printf("Break even is: $%.2f\n",breakEven);
+        }
+        else {
+            System.out.printf("Profit is: $%.2f\n", profit);
+            System.out.printf("Break even is: $%.2f\n",breakEven);
+        }
+        
+        scanner.close();
+    }
+}
+}
