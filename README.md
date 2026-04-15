@@ -6,7 +6,7 @@
 # Berechnung von Umfang, Fläche und Volumen eines Kreises
 # Shopping-Cart-Programm
 # Countdown bis zum neuen Jahr
-# Grundlegender Bestell- und Umsatzrechner
+# Grundlegender Bestell- und Umsatz- sowie Gewinnzonerechner
 # grundlegendes Bestandsverwaltungssystem
 # Weitere kleine Übungen
 
